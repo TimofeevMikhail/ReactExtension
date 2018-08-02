@@ -1,0 +1,54 @@
+.message{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100px;
+    width: 350px;
+    height: 150px;
+    background-size: cover;
+    border: grey solid 4px;
+    z-index: 999999999999999999;
+    box-shadow: grey 0 0 7px
+}
+
+.messageBlock{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 150px;
+}
+
+.messageText{
+    color: black;
+    margin: 10px 0;
+    padding: 20px 0;
+    font-family: Segoe UI, Bahnschrift, monospace;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 18px;
+}
+
+.buttonHello{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 36px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(0deg, #000000, #000000), #000000;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.24), 0 0 8px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+}
+
+.buttonHello:hover{
+    color: black;
+    background: linear-gradient(0deg, #838383, #838383), #838383;
+    box-shadow: 0 8px 8px rgba(99, 99, 99, 0.24), 0 0 8px rgba(99, 99, 99, 0.12),
+        0 2px 2px rgba(99, 99, 99, 0.24), 0 0 2px rgba(99, 99, 99, 0.12);
+}

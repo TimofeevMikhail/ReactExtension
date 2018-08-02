@@ -1,0 +1,55 @@
+html,
+body {
+    margin: 0;
+    min-height: 180px;
+    padding: 0;
+    width: 400px;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: Segoe UI, monospace;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 20px;
+    color: #000000;
+}
+
+#domainNames{
+    font-family: Bahnschrift, monospace;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 20px;
+    color: #000000;
+}
+
+a:link,
+a:visited {
+    outline: 0;
+    text-decoration: none;
+    color: #000000;
+}
+
+#row{
+    margin: 10px;
+}
+
+.header{
+    border-bottom: 4px solid #C6C6C6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo{
+    margin: 10px 0 0 0 ;
+}

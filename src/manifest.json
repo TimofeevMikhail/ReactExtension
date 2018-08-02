@@ -1,0 +1,33 @@
+{
+  "name": "ExtensionReact",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons":{
+    "128": "./images/web.png",
+    "16": "./images/extension_16.png",
+    "48": "./images/web.png"
+  },
+  "browser_action":{
+    "default_title": "ExtensionReact",
+    "default_icon" : "./images/web.png",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "scripts":["js/background.js"],
+    "persistent": true
+  },
+  "content_scripts":[
+    {
+      "matches": ["http://*/*" , "https://*/*"],
+      "js": ["js/content.js"]
+    }
+  ],
+  "content_security_policy" : "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "permissions": [
+    "tabs","http://*/*", "https://*/*", "storage"
+  ],
+  "web_accessible_resources":[
+    "images/extension_16.png",
+    "images/background.jpg"
+  ]
+}
