@@ -16,7 +16,7 @@ class App extends Component {
 
   render() {
       return (
-          <div className="message" style={style}>
+          <div className="messages" style={style}>
               <div className="messageBlock">
                   <h1 className="messageText">{this.props.message}</h1>
                   <button className="buttonHello" onClick={this.handleClick}>HELLO</button>
